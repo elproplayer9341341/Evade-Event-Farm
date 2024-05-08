@@ -1,0 +1,210 @@
+local Library = Instance.new("ScreenGui")
+local TitleBar = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local OpenAndClose = Instance.new("TextButton")
+local Home = Instance.new("Frame")
+local ToggleFrame = Instance.new("Frame")
+local ToggleText = Instance.new("TextLabel")
+local Toggle = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+local NewButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Credits = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Active1 = Instance.new("BoolValue")
+local UIStroke = Instance.new("UIStroke")
+Active1.Name = "Active1"
+Active1.Parent = game.Workspace
+Active1.Value = false
+
+Library.Name = "Library"
+Library.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Library.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TitleBar.Name = "TitleBar"
+TitleBar.Parent = Library
+TitleBar.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TitleBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TitleBar.BorderSizePixel = 0
+TitleBar.Position = UDim2.new(0.052941177, 0, 0.205387205, 0)
+TitleBar.Size = UDim2.new(0, 207, 0, 38)
+
+Title.Name = "Title"
+Title.Parent = TitleBar
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0, 207, 0, 38)
+Title.Font = Enum.Font.FredokaOne
+Title.Text = "Evade"
+Title.TextColor3 = Color3.fromRGB(250, 250, 250)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+OpenAndClose.Name = "OpenAndClose"
+OpenAndClose.Parent = TitleBar
+OpenAndClose.BackgroundColor3 = Color3.fromRGB(55, 255, 24)
+OpenAndClose.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OpenAndClose.BorderSizePixel = 0
+OpenAndClose.Position = UDim2.new(0.821256042, 0, 0.131578952, 0)
+OpenAndClose.Size = UDim2.new(0, 29, 0, 27)
+OpenAndClose.Font = Enum.Font.SourceSans
+OpenAndClose.Text = ""
+OpenAndClose.TextColor3 = Color3.fromRGB(0, 0, 0)
+OpenAndClose.TextSize = 14.000
+
+Home.Name = "Home"
+Home.Parent = TitleBar
+Home.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Home.BorderSizePixel = 0
+Home.Position = UDim2.new(0.00483091781, 0, 1, 0)
+Home.Size = UDim2.new(0, 206, 0, 104)
+
+ToggleFrame.Name = "ToggleFrame"
+ToggleFrame.Parent = Home
+ToggleFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToggleFrame.BackgroundTransparency = 1.000
+ToggleFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ToggleFrame.BorderSizePixel = 0
+ToggleFrame.Position = UDim2.new(0, 0, 0.0479041934, 0)
+ToggleFrame.Size = UDim2.new(0, 206, 0, 43)
+
+ToggleText.Name = "ToggleText"
+ToggleText.Parent = ToggleFrame
+ToggleText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToggleText.BackgroundTransparency = 1.000
+ToggleText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ToggleText.BorderSizePixel = 0
+ToggleText.Position = UDim2.new(0.0533980578, 0, 0.0313511342, 0)
+ToggleText.Size = UDim2.new(0, 138, 0, 40)
+ToggleText.Font = Enum.Font.FredokaOne
+ToggleText.Text = "Auto Event"
+ToggleText.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleText.TextScaled = true
+ToggleText.TextSize = 14.000
+ToggleText.TextWrapped = true
+
+Toggle.Name = "Toggle"
+Toggle.Parent = ToggleFrame
+Toggle.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Toggle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.BorderSizePixel = 0
+Toggle.Position = UDim2.new(0.820388377, 0, 0.189546451, 0)
+Toggle.Size = UDim2.new(0, 29, 0, 27)
+Toggle.Image = "rbxassetid://2790552399"
+Toggle.ImageTransparency = 1
+Toggle.BackgroundTransparency = 1
+
+UIStroke.Parent = Toggle
+UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke.Color = Color3.fromRGB(0, 0, 0)
+UIStroke.Thickness = 1
+
+UICorner.CornerRadius = UDim.new(0, 2)
+UICorner.Parent = Toggle
+
+NewButton.Name = "NewButton"
+NewButton.Parent = Home
+NewButton.BackgroundColor3 = Color3.fromRGB(12, 235, 247)
+NewButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NewButton.BorderSizePixel = 0
+NewButton.Position = UDim2.new(0.0291262139, 0, 0.531959414, 0)
+NewButton.Size = UDim2.new(0, 193, 0, 34)
+NewButton.Font = Enum.Font.FredokaOne
+NewButton.Text = "Anti Afk"
+NewButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+NewButton.TextScaled = true
+NewButton.TextSize = 14.000
+NewButton.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 5)
+UICorner_2.Parent = NewButton
+
+Credits.Name = "Credits"
+Credits.Parent = Home
+Credits.BackgroundColor3 = Color3.fromRGB(149, 87, 255)
+Credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0, 0, 1, 0)
+Credits.Size = UDim2.new(0, 206, 0, 27)
+
+TextLabel.Parent = Credits
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 206, 0, 27)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "YT: @masket_smile6013"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+TitleBar.Active = true
+TitleBar.Draggable = true
+
+Toggle.MouseButton1Click:Connect(function()
+	if not Active1.Value then
+		Active1.Value = true
+		Toggle.BackgroundColor3 = Color3.fromRGB(55, 255, 24)
+		Toggle.ImageTransparency = 0
+		Toggle.BackgroundTransparency = 0
+while Active1.Value == true do
+wait()
+local E = game.Workspace["Game"].Effects.Tickets
+local tp = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+game.ReplicatedStorage.Events.Respawn:FireServer()
+print("Auto Farming..")
+for i,v in pairs(E:GetChildren()) do
+if v:FindFirstChild("HumanoidRootPart") then
+tp.CFrame = v.HumanoidRootPart.CFrame
+end
+end
+end
+	else
+	if Active1.Value then
+		Active1.Value = false
+		Toggle.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		Toggle.BackgroundTransparency = 1
+		Toggle.ImageTransparency = 1
+	end
+	end
+end)
+
+OpenAndClose.MouseButton1Click:Connect(function()
+	if not Home.Visible then
+		Home.Visible = true
+		OpenAndClose.BackgroundColor3 = Color3.fromRGB(55, 255, 24)
+	else
+	if Home.Visible then
+		Home.Visible = false
+		OpenAndClose.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+	end
+	end
+end)
+
+NewButton.MouseButton1Click:Connect(function()
+	local GC = getconnections or get_signal_cons
+	if GC then
+		for i,v in pairs(GC(Players.LocalPlayer.Idled)) do
+			if v["Disable"] then
+				v["Disable"](v)
+			elseif v["Disconnect"] then
+				v["Disconnect"](v)
+			end
+		end
+	else
+		Players.LocalPlayer.Idled:Connect(function()
+			VirtualUser:CaptureController()
+			VirtualUser:ClickButton2(Vector2.new())
+		end)
+	end
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Anti Afk",
+		Text = "Anti Idle/Afk Enabled",
+		Duration = 5
+	})
+end)
